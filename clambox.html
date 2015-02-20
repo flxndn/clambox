@@ -17,18 +17,29 @@
 <body>
 	<h1>Customized Clambox</h1>
 	<p><a href="https://github.com/wout/svg.js/">svg.js</a></p>
+	<p><a href="http://www.petercollingridge.co.uk/data-visualisation/using-javascript-control-svg">good example</a></p>
 	<div id="paper"></div>
 	<p>fin</p>
 
 	<script>
+		//----------------------------------------------------------------------
+		function rectangle(canvas, x, y, w, h){
+		//----------------------------------------------------------------------
+			rect = canvas.rect(w, h).attr({ fill: '#f06', opacity: 0.5 }).stroke({width:1, color:'#000'});
+			rect.move(x, y);
+			return rect
+		}
+		//----------------------------------------------------------------------
 		// Book dimmensions
 		book_w=210;
 		book_h=297;
 		book_t=40;
 		var draw = svg('paper').size(book_w*2, book_h*2)
 
-		var rect = draw.rect(book_w, book_h).attr({ fill: '#f06', opacity: 0.5 }).stroke({width:1, color:'#000'});
-		rect.move(10,10);
+		rectangle(draw, book_t, book_h, 0,0);
+
+		//var rect = draw.rect(book_w, book_h).attr({ fill: '#f06', opacity: 0.5 }).stroke({width:1, color:'#000'});
+		//rect.move(10,10);
 
 		//var circle = draw.circle(100, 100, 10).attr({ fill: '#f06' })
 
