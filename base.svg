@@ -2,10 +2,9 @@
 
     <style>
     	circle {
-    		fill-opacity: 0.5;
-    		stroke-width: 4;
-    		fill: #3080d0;
-    		stroke: #3080d0;
+    		stroke-width: 1;
+    		fill: #fff;
+    		stroke: #000;
     	}
        rect.cardboard {
 		   fill:#9699fb;
@@ -32,5 +31,5 @@
     <rect id="left_left" class="cardboard" width="57.142857" height="222.85715" x="100.00001" y="549.64886" />
     <rect id="up_left" class="cardboard" width="57.142857" height="230.09448" x="700.71429" y="546.03021" />
     <rect id="down_left" class="cardboard" width="57.142857" height="291.54849" x="775.74774" y="-458.7623" />
-    <circle id="my-circle" cx="100" cy="100" r="50" />
+    <circle id="hole" cx="100" cy="100" r="12.7" />
 </svg>
