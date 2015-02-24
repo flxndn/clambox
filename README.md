@@ -3,9 +3,13 @@ Customizable clambox for book protecting in SVG
 
 
 ## References
-*  [University of Upsala](https://www.youtube.com/watch?v=EDzZFUlHd0s)
+*  [The 5-minute Phase Box - part 1 - Uppsala University Library](https://www.youtube.com/watch?v=EDzZFUlHd0s)
 
-*  [xxx](http://www.petercollingridge.co.uk/data-visualisation/using-javascript-control-svg) good example
+*  [Using Javascript to control an SVG](http://www.petercollingridge.co.uk/data-visualisation/using-javascript-control-svg) Peter's Website
+
+*  [Inter-document scripting: referencing embedded SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Scripting)
+
+*  [SVG Web library](http://dev.w3.org/SVG/tools/svgweb/docs/UserManual.html)
 
 ## Done
 *  SVG updateble with custom dimmensions

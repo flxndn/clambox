@@ -29,7 +29,27 @@ function adapt (height, width, thick, paper) {
 	hole.setAttributeNS(null, "cx", 4*thick+width*2+paper);
 	hole.setAttributeNS(null, "cy", thick+(height+2*paper)/2); 
 
-	//svgDoc.append('<circle id="hole" cx="100" cy="100" r="12.7" />');
+	/*
+	var newElement = document.createElementNS("http://www.w3.org/2000/svg", 'path'); //Create a path in SVG's namespace
+	newElement.setAttribute("d","M 0 0 L 10 10"); //Set path's data
+	newElement.style.stroke = "#000"; //Set stroke colour
+	newElement.style.strokeWidth = "5px"; //Set stroke width
+	svgDoc.appendChild(newElement);
+
+
+	var el = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+	el.setAttribute('cx', 200);
+	el.setAttribute('cy', 200);
+	el.setAttribute('r', 5);
+	el.setAttribute('fill', '#223FA3');
+	el.setAttribute('stroke-width', '1px');
+	el.setAttribute('stroke', 'black');
+
+	//var root = document.getElementsByTagNameNS(svgns, 'svg')[0];
+	//var root = document.getElementById('base-svg');
+	var root = svgDoc
+	root.appendChild(el);
+	*/
 }
 //------------------------------------------------------------------------------
 function update() {
