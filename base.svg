@@ -19,7 +19,6 @@
 
 	<!--
     <rect x="0.5" y="0.5" width="399" height="299" stroke="#333" fill="none"/>
-    <circle id="my-circle" cx="100" cy="100" r="50" />
 	-->
     <rect id="base_front" class="cardboard" width="160.23697" height="230.43529" x="463.45294" y="545.8598" />
     <rect id="up_right" class="cardboard" width="57.142857" height="291.54849" x="485.45132" y="-755.31842" />
@@ -27,10 +26,11 @@
     <rect id="right" class="cardboard" width="57.142857" height="230.09448" x="632.14288" y="546.03021" />
     <rect id="right_right" class="cardboard" width="57.142857" height="291.54849" x="489.36368" y="-459.62778" />
 
-    <rect id="bisagra" class="cardboard" width="57.142857" height="222.85715" x="400.71429" y="549.64886" />
+    <rect id="hinge" class="cardboard" width="57.142857" height="222.85715" x="400.71429" y="549.64886" />
     <rect id="base_back" class="cardboard" width="160.23697" height="223.18723" x="235.89886" y="549.48383" />
     <rect id="left" class="cardboard" width="57.142857" height="222.85715" x="167.85713" y="549.64886" />
     <rect id="left_left" class="cardboard" width="57.142857" height="222.85715" x="100.00001" y="549.64886" />
     <rect id="up_left" class="cardboard" width="57.142857" height="230.09448" x="700.71429" y="546.03021" />
     <rect id="down_left" class="cardboard" width="57.142857" height="291.54849" x="775.74774" y="-458.7623" />
+    <circle id="my-circle" cx="100" cy="100" r="50" />
 </svg>

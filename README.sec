@@ -1,0 +1,19 @@
+* clambox
+	Customizable clambox for book protecting in SVG
+
+	
+	* References
+		- [[https://www.youtube.com/watch?v=EDzZFUlHd0s University of Upsala]]
+		- [[http://www.petercollingridge.co.uk/data-visualisation/using-javascript-control-svg xxx]] good example
+
+	* Done
+		- SVG updateble with custom dimmensions
+
+	* TODO
+		- levels
+		- dotted lines for foldings
+		- 3d
+		- animations
+		- rounded corners
+- 
+
