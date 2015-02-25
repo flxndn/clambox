@@ -14,6 +14,8 @@ Customizable clambox for book protecting in SVG
 *  [Snap.svg](http://snapsvg.io/)
 
 ## Done
+*  Using Snap.svg
+
 *  SVG updateble with custom dimmensions
 
 ## TODO
