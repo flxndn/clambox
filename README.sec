@@ -1,6 +1,5 @@
 * clambox
 	Customizable clambox for book protecting in SVG
-
 	
 	* References
 		* Clamshell box
@@ -12,12 +11,12 @@
 	* Done
 		- Using Snap.svg
 		- SVG updateble with custom dimmensions
+		- measures
+		- move to see margin levels
+		- fully functional application
 
 	* TODO
-		- levels
 		- dotted lines for foldings
 		- 3d
 		- animations
 		- rounded corners
-- 
-

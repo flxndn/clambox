@@ -16,9 +16,13 @@ Customizable clambox for book protecting in SVG
 
 *  SVG updateble with custom dimmensions
 
-## TODO
-*  levels
+*  measures
 
+*  move to see margin levels
+
+*  fully functional application
+
+## TODO
 *  dotted lines for foldings
 
 *  3d
@@ -26,7 +30,5 @@ Customizable clambox for book protecting in SVG
 *  animations
 
 *  rounded corners
-
-*  
 
 
