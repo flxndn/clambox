@@ -41,6 +41,13 @@
 		#schema_layer, #measures_layer {
 			width:100%;
 		}
+		#measures_book, #measures_inputs {
+			width:48%;
+			float:left;
+		}
+		#measures_controls {
+			list-style: none;
+		}
 		h1 {display: none; }
 	</style>
 </head>
@@ -51,19 +58,19 @@
 	<li><img id="schema_button" src="img/pajarita.svg"></li>
 	</ul>
 	<div id="measures_layer">
-		<object data="img/book_perspective.svg" type="image/svg+xml" width="400" height="300"></object>
-		<form>
-			<dl>
-				<dt>width</dt>
-				<dd><input type="text" id="book_width" value="210"/></dd>
-				<dt>height</dt>
-				<dd><input type="text" id="book_height" value="297"/></dd>
-				<dt>thickness</dt>
-				<dd><input type="text" id="book_thickness" value="50"/></dd>
-				<dt>paper</dt>
-				<dd><input type="text" id="book_paper" value="2.4"/></dd>
-			</dl>
-		</form>
+		<div id="measures_book">
+			<object id="book_perspective" data="img/book_perspective.svg" type="image/svg+xml" width="400" height="300"></object>
+		</div>
+		<div id="measures_inputs">
+			<form>
+				<ul id="measures_controls">
+					<li><input type="text" id="book_width" value="210"/></li>
+					<li><input type="text" id="book_height" value="297"/></li>
+					<li><input type="text" id="book_thickness" value="50"/></li>
+					<li><input type="text" id="book_paper" value="2.4"/></li>
+				</ul>
+			</form>
+		</div>
 	</div>
 	<div id="schema_layer">
 		<svg id='svgClamshell' version="1.1" xmlns="http://www.w3.org/2000/svg"

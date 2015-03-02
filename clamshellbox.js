@@ -125,9 +125,116 @@ function update() {
 		);
 }
 //------------------------------------------------------------------------------
+function set_limits_visibility(value) {
+//------------------------------------------------------------------------------
+	var snap = Snap('#book_perspective');
+
+	snap.select('#path_yz1').attr('visibility', value);
+	snap.select('#path_yz2').attr('visibility', value);
+
+	snap.select('#path_xz1').attr('visibility', value);
+	snap.select('#path_xz2').attr('visibility', value);
+
+	snap.select('#path_xy1').attr('visibility', value);
+	snap.select('#path_xy2').attr('visibility', value);
+	snap.select('#path_xy3').attr('visibility', value);
+}
+//------------------------------------------------------------------------------
+function hide_limits() {
+//------------------------------------------------------------------------------
+	set_limits_visibility('hidden');
+}
+//------------------------------------------------------------------------------
+function show_limits() {
+//------------------------------------------------------------------------------
+	set_limits_visibility('visible');
+}
+//------------------------------------------------------------------------------
+function set_limits_xz(value) {
+//------------------------------------------------------------------------------
+	var snap = Snap('#book_perspective');
+	snap.select('#path_xz1').attr('visibility', value);
+	snap.select('#path_xz2').attr('visibility', value);
+}
+//------------------------------------------------------------------------------
+function show_limits_xz() {
+//------------------------------------------------------------------------------
+	set_limits_xz('visible');
+}
+//------------------------------------------------------------------------------
+function hide_limits_xz() {
+//------------------------------------------------------------------------------
+	set_limits_xz('hidden');
+}
+//------------------------------------------------------------------------------
+function set_limits_yz(value) {
+//------------------------------------------------------------------------------
+	var snap = Snap('#book_perspective');
+	snap.select('#path_yz1').attr('visibility', value);
+	snap.select('#path_yz2').attr('visibility', value);
+}
+//------------------------------------------------------------------------------
+function show_limits_yz() {
+//------------------------------------------------------------------------------
+	set_limits_yz('visible');
+}
+//------------------------------------------------------------------------------
+function hide_limits_yz() {
+//------------------------------------------------------------------------------
+	set_limits_yz('hidden');
+}
+//------------------------------------------------------------------------------
+function set_limits_xy(value) {
+//------------------------------------------------------------------------------
+	var snap = Snap('#book_perspective');
+	snap.select('#path_xy1').attr('visibility', value);
+	snap.select('#path_xy2').attr('visibility', value);
+}
+//------------------------------------------------------------------------------
+function show_limits_xy() {
+//------------------------------------------------------------------------------
+	set_limits_xy('visible');
+}
+//------------------------------------------------------------------------------
+function hide_limits_xy() {
+//------------------------------------------------------------------------------
+	set_limits_xy('hidden');
+}
+//------------------------------------------------------------------------------
+function set_limits_xy2(value) {
+//------------------------------------------------------------------------------
+	var snap = Snap('#book_perspective');
+	snap.select('#path_xy2').attr('visibility', value);
+	snap.select('#path_xy3').attr('visibility', value);
+}
+//------------------------------------------------------------------------------
+function show_limits_xy2() {
+//------------------------------------------------------------------------------
+	set_limits_xy2('visible');
+}
+//------------------------------------------------------------------------------
+function hide_limits_xy2() {
+//------------------------------------------------------------------------------
+	set_limits_xy2('hidden');
+}
+//------------------------------------------------------------------------------
 $(document).ready(function() { 
 	$('#schema_layer').hide();
+	hide_limits();
+
 	$('#measures_button').addClass('enabled');
 	$('#schema_button').bind('click', toSchema);
 	$('#measures_button').bind('click', toMeasures);
+
+	$('#book_width').bind('focus', show_limits_yz);
+	$('#book_width').bind('blur', hide_limits_yz);
+
+	$('#book_height').bind('focus', show_limits_xz);
+	$('#book_height').bind('blur', hide_limits_xz);
+
+	$('#book_thickness').bind('focus', show_limits_xy);
+	$('#book_thickness').bind('blur', hide_limits_xy);
+
+	$('#book_paper').bind('focus', show_limits_xy2);
+	$('#book_paper').bind('blur', hide_limits_xy2);
 });
